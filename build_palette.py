@@ -38,20 +38,24 @@ def text(x,y,s,sz,fill=TXT,wt=700,anchor="middle",op=1.0):
     return (f'<text x="{x:.1f}" y="{y:.1f}" text-anchor="{anchor}" font-family="{FONT}" '
             f'font-size="{sz}" font-weight="{wt}" fill="{fill}" fill-opacity="{op}">{esc(s)}</text>')
 
-def glass_card(x,y,w,h,stroke, rx=24, fill_tint=None, tint_op=0.16):
+def glass_card(x,y,w,h,stroke, rx=24, fill_tint=None, tint_op=0.22):
     p = []
     p.append(f'<rect x="{x}" y="{y}" width="{w}" height="{h}" rx="{rx}" fill="none" stroke="{stroke}" '
-             f'stroke-width="10" stroke-opacity="0.14" filter="url(#softGlow)"/>')
-    p.append(f'<rect x="{x}" y="{y}" width="{w}" height="{h}" rx="{rx}" fill="#060c15" fill-opacity="0.88"/>')
+             f'stroke-width="20" stroke-opacity="0.20" filter="url(#softGlow)"/>')
+    p.append(f'<rect x="{x}" y="{y}" width="{w}" height="{h}" rx="{rx}" fill="none" stroke="{stroke}" '
+             f'stroke-width="7" stroke-opacity="0.28" filter="url(#tightGlow)"/>')
+    p.append(f'<rect x="{x}" y="{y}" width="{w}" height="{h}" rx="{rx}" fill="#050b14" fill-opacity="0.90"/>')
     if fill_tint:
         p.append(f'<rect x="{x}" y="{y}" width="{w}" height="{h}" rx="{rx}" fill="{fill_tint}" fill-opacity="{tint_op}" '
-                 f'stroke="{stroke}" stroke-opacity="0.9" stroke-width="2.2"/>')
+                 f'stroke="{stroke}" stroke-opacity="0.95" stroke-width="2.4"/>')
     else:
         p.append(f'<rect x="{x}" y="{y}" width="{w}" height="{h}" rx="{rx}" fill="none" '
-                 f'stroke="{stroke}" stroke-opacity="0.85" stroke-width="2.2"/>')
+                 f'stroke="{stroke}" stroke-opacity="0.9" stroke-width="2.4"/>')
+    p.append(f'<rect x="{x}" y="{y}" width="{w}" height="{h}" rx="{rx}" fill="url(#frost)"/>')
     p.append(f'<rect x="{x}" y="{y}" width="{w}" height="{h}" rx="{rx}" fill="url(#glassHi)"/>')
-    p.append(f'<rect x="{x+4}" y="{y+4}" width="{w-8}" height="{h-8}" rx="{max(rx-4,4)}" fill="none" '
-             f'stroke="#ffffff" stroke-opacity="0.12" stroke-width="1.15"/>')
+    p.append(f'<rect x="{x}" y="{y}" width="{w}" height="{max(h*0.4, 24):.1f}" rx="{rx}" fill="url(#glassTopBand)"/>')
+    p.append(f'<rect x="{x+3.5}" y="{y+3.5}" width="{w-7}" height="{h-7}" rx="{max(rx-3.5,4)}" fill="none" '
+             f'stroke="#ffffff" stroke-opacity="0.22" stroke-width="1.4"/>')
     return "\n".join(p)
 
 parts = []
@@ -126,25 +130,29 @@ rx0 = (W - row_w) / 2
 
 # Title sample card
 x = rx0
-parts.append(glass_card(x, y_demo, dw1, demo_h, BLUE, rx=24, fill_tint=BLUE, tint_op=0.10))
+parts.append(glass_card(x, y_demo, dw1, demo_h, BLUE, rx=24, fill_tint=BLUE, tint_op=0.14))
 parts.append(text(x + dw1/2, y_demo + 58, "大标题 · 最亮最大", 36, TXT, 800))
 parts.append(text(x + dw1/2, y_demo + 96, "整图只有这一档最抢眼", 18, MUTED, 500, op=0.72))
 parts.append(text(x + dw1/2, y_demo + 128, "什么时候用：封面 / 流程总标题", 14, MUTED, 500, op=0.55))
 
 # Blue step
 x = rx0 + dw1 + gapd
-parts.append(glass_card(x, y_demo, dw2, demo_h, BLUE, rx=24, fill_tint=BLUE, tint_op=0.16))
+parts.append(glass_card(x, y_demo, dw2, demo_h, BLUE, rx=24, fill_tint=BLUE, tint_op=0.22))
 parts.append(text(x + dw2/2, y_demo + 58, "步骤 · 蓝玻璃", 28, TXT, 800))
 parts.append(text(x + dw2/2, y_demo + 96, "主动作写在这里", 18, MUTED, 500, op=0.72))
 parts.append(text(x + dw2/2, y_demo + 128, "什么时候用：普通流程节点", 14, MUTED, 500, op=0.55))
 
 # Gold decision
 x = rx0 + dw1 + gapd + dw2 + gapd
-parts.append(glass_card(x, y_demo, dw3, demo_h, GOLD, rx=24, fill_tint=GOLD, tint_op=0.18))
+parts.append(glass_card(x, y_demo, dw3, demo_h, GOLD, rx=24, fill_tint=GOLD, tint_op=0.26))
 # override with gold stroke gradient look
+parts.append(f'<rect x="{x}" y="{y_demo}" width="{dw3}" height="{demo_h}" rx="24" fill="none" stroke="{GOLD}" '
+             f'stroke-width="18" stroke-opacity="0.22" filter="url(#softGlow)"/>')
 parts.append(f'<rect x="{x}" y="{y_demo}" width="{dw3}" height="{demo_h}" rx="24" fill="url(#goldFill)" '
-             f'stroke="url(#goldStroke)" stroke-width="2.4"/>')
+             f'stroke="url(#goldStroke)" stroke-width="2.6"/>')
+parts.append(f'<rect x="{x}" y="{y_demo}" width="{dw3}" height="{demo_h}" rx="24" fill="url(#frost)"/>')
 parts.append(f'<rect x="{x}" y="{y_demo}" width="{dw3}" height="{demo_h}" rx="24" fill="url(#glassHi)"/>')
+parts.append(f'<rect x="{x}" y="{y_demo}" width="{dw3}" height="{demo_h*0.4:.1f}" rx="24" fill="url(#glassTopBand)"/>')
 parts.append(text(x + dw3/2, y_demo + 58, "判断 · 金框", 28, GOLD, 800))
 parts.append(text(x + dw3/2, y_demo + 96, "分叉问一句", 18, MUTED, 500, op=0.72))
 parts.append(text(x + dw3/2, y_demo + 128, "什么时候用：要不要分叉", 14, MUTED, 500, op=0.55))
@@ -153,7 +161,7 @@ parts.append(text(x + dw3/2, y_demo + 128, "什么时候用：要不要分叉", 
 x = rx0 + dw1 + gapd + dw2 + gapd + dw3 + gapd
 pill_h = 72
 py = y_demo + (demo_h - pill_h) / 2 - 12
-parts.append(glass_card(x, py, dw4, pill_h, ORANGE, rx=pill_h/2, fill_tint=ORANGE, tint_op=0.18))
+parts.append(glass_card(x, py, dw4, pill_h, ORANGE, rx=pill_h/2, fill_tint=ORANGE, tint_op=0.26))
 parts.append(text(x + dw4/2, py + pill_h/2 + 8, "另线 · 橙出口", 22, ORANGE, 800))
 parts.append(text(x + dw4/2, py + pill_h + 28, "一图最多一处主橙", 14, MUTED, 500, op=0.55))
 parts.append(text(x + dw4/2, py + pill_h + 48, "什么时候用：其他业务 / 风险", 13, MUTED, 500, op=0.5))
@@ -189,40 +197,59 @@ defs = f'''
   <stop offset="0%" stop-color="#0b1422"/><stop offset="70%" stop-color="{BG}"/>
   <stop offset="100%" stop-color="#060e16"/>
 </linearGradient>
-<radialGradient id="glowBlue" cx="10%" cy="2%" r="38%">
-  <stop offset="0%" stop-color="{CORE_BLUE}" stop-opacity="0.24"/><stop offset="100%" stop-color="{CORE_BLUE}" stop-opacity="0"/>
+<radialGradient id="glowBlue" cx="8%" cy="0%" r="50%">
+  <stop offset="0%" stop-color="{CORE_BLUE}" stop-opacity="0.40"/><stop offset="55%" stop-color="{CORE_BLUE}" stop-opacity="0.12"/>
+  <stop offset="100%" stop-color="{CORE_BLUE}" stop-opacity="0"/>
 </radialGradient>
-<radialGradient id="glowTeal" cx="92%" cy="4%" r="26%">
-  <stop offset="0%" stop-color="#19e7d0" stop-opacity="0.14"/><stop offset="100%" stop-color="#19e7d0" stop-opacity="0"/>
+<radialGradient id="glowTeal" cx="94%" cy="2%" r="36%">
+  <stop offset="0%" stop-color="#19e7d0" stop-opacity="0.30"/><stop offset="60%" stop-color="#19e7d0" stop-opacity="0.09"/>
+  <stop offset="100%" stop-color="#19e7d0" stop-opacity="0"/>
+</radialGradient>
+<radialGradient id="glowBot" cx="50%" cy="100%" r="32%">
+  <stop offset="0%" stop-color="#8e63ff" stop-opacity="0.20"/><stop offset="100%" stop-color="#8e63ff" stop-opacity="0"/>
 </radialGradient>
 <linearGradient id="divider" x1="0" y1="0" x2="1" y2="0">
   <stop offset="0%" stop-color="{BORDER}" stop-opacity="0"/><stop offset="50%" stop-color="{BORDER}" stop-opacity="0.55"/>
   <stop offset="100%" stop-color="{BORDER}" stop-opacity="0"/>
 </linearGradient>
-<linearGradient id="glassHi" x1="0" y1="0" x2="0.35" y2="1">
-  <stop offset="0%" stop-color="#ffffff" stop-opacity="0.12"/><stop offset="35%" stop-color="#ffffff" stop-opacity="0.035"/>
+<linearGradient id="glassHi" x1="0" y1="0" x2="0.4" y2="1">
+  <stop offset="0%" stop-color="#ffffff" stop-opacity="0.20"/><stop offset="28%" stop-color="#ffffff" stop-opacity="0.07"/>
   <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
 </linearGradient>
+<linearGradient id="glassTopBand" x1="0" y1="0" x2="0" y2="1">
+  <stop offset="0%" stop-color="#ffffff" stop-opacity="0.18"/><stop offset="55%" stop-color="#b8d4ff" stop-opacity="0.06"/>
+  <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+</linearGradient>
+<linearGradient id="frost" x1="0" y1="0" x2="0" y2="1">
+  <stop offset="0%" stop-color="#dce8ff" stop-opacity="0.10"/><stop offset="40%" stop-color="#a8c4ff" stop-opacity="0.045"/>
+  <stop offset="100%" stop-color="#071018" stop-opacity="0.02"/>
+</linearGradient>
 <linearGradient id="goldFill" x1="0" y1="0" x2="0" y2="1">
-  <stop offset="0%" stop-color="{GOLD}" stop-opacity="0.22"/><stop offset="100%" stop-color="#b8860b" stop-opacity="0.12"/>
+  <stop offset="0%" stop-color="{GOLD}" stop-opacity="0.34"/><stop offset="100%" stop-color="#b8860b" stop-opacity="0.18"/>
 </linearGradient>
 <linearGradient id="goldStroke" x1="0" y1="0" x2="1" y2="1">
   <stop offset="0%" stop-color="#fff3b0"/><stop offset="45%" stop-color="{GOLD}"/><stop offset="100%" stop-color="#c99214"/>
 </linearGradient>
 <linearGradient id="ribbon" x1="0" y1="0" x2="1" y2="0">
-  <stop offset="0%" stop-color="#4285f4" stop-opacity="0.16"/><stop offset="40%" stop-color="#8e63ff" stop-opacity="0.12"/>
-  <stop offset="75%" stop-color="#2ed7bd" stop-opacity="0.10"/><stop offset="100%" stop-color="#ffd43b" stop-opacity="0.08"/>
+  <stop offset="0%" stop-color="#4285f4" stop-opacity="0.32"/><stop offset="40%" stop-color="#8e63ff" stop-opacity="0.24"/>
+  <stop offset="75%" stop-color="#2ed7bd" stop-opacity="0.18"/><stop offset="100%" stop-color="#ffd43b" stop-opacity="0.12"/>
 </linearGradient>
-<filter id="softGlow" x="-25%" y="-45%" width="150%" height="190%"><feGaussianBlur stdDeviation="10"/></filter>
+<filter id="softGlow" x="-40%" y="-60%" width="180%" height="220%"><feGaussianBlur stdDeviation="16"/></filter>
+<filter id="tightGlow" x="-20%" y="-35%" width="140%" height="170%"><feGaussianBlur stdDeviation="5"/></filter>
 '''
 
 bg = (f'<rect width="{W}" height="{H}" fill="url(#bgGrad)"/>'
       f'<rect width="{W}" height="{H}" fill="url(#glowBlue)"/>'
       f'<rect width="{W}" height="{H}" fill="url(#glowTeal)"/>'
-      f'<ellipse cx="1380" cy="110" rx="130" ry="84" fill="none" stroke="{PURPLE}" stroke-opacity="0.12" stroke-width="1.1"/>'
-      f'<ellipse cx="1380" cy="110" rx="90" ry="56" fill="none" stroke="{TEAL}" stroke-opacity="0.09" stroke-width="1"/>'
+      f'<rect width="{W}" height="{H}" fill="url(#glowBot)"/>'
+      f'<ellipse cx="1390" cy="120" rx="190" ry="120" fill="none" stroke="{PURPLE}" stroke-opacity="0.22" stroke-width="1.6"/>'
+      f'<ellipse cx="1390" cy="120" rx="140" ry="88" fill="none" stroke="{TEAL}" stroke-opacity="0.18" stroke-width="1.3"/>'
+      f'<ellipse cx="1390" cy="120" rx="92" ry="56" fill="none" stroke="{BLUE}" stroke-opacity="0.14" stroke-width="1.1"/>'
+      f'<ellipse cx="140" cy="680" rx="130" ry="90" fill="none" stroke="{PURPLE}" stroke-opacity="0.12" stroke-width="1.2"/>'
       f'<path d="M -20 420 C 280 360, 560 500, 900 440 S 1300 360, 1560 470" fill="none" stroke="url(#ribbon)" '
-      f'stroke-width="14" stroke-opacity="0.1" stroke-linecap="round"/>')
+      f'stroke-width="20" stroke-opacity="0.16" stroke-linecap="round"/>'
+      f'<path d="M -30 620 C 350 560, 700 700, 1050 620 S 1400 580, 1580 650" fill="none" stroke="url(#ribbon)" '
+      f'stroke-width="12" stroke-opacity="0.10" stroke-linecap="round"/>')
 
 svg = (f'<?xml version="1.0" encoding="UTF-8"?>\n<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{H}" viewBox="0 0 {W} {H}">\n'
        f'<defs>{defs}</defs>\n{bg}\n' + "\n".join(parts) + "\n</svg>\n")

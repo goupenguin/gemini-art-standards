@@ -22,7 +22,7 @@
 | [palette-hierarchy.png](./palette-hierarchy.png) | 常用配色与主次参考图（色块 + HEX + 什么时候用 + 主次示范卡） |
 | [palette-hierarchy.svg](./palette-hierarchy.svg) | 同上 SVG 源 |
 | [palette-hierarchy-preview.jpg](./palette-hierarchy-preview.jpg) | 聊天预览用 JPG |
-| [samples/rebate-flow-v11-preview.jpg](./samples/rebate-flow-v11-preview.jpg) | 按本标准落地的返佣节点接待流程图示例 |
+| [samples/rebate-flow-v12-preview.jpg](./samples/rebate-flow-v12-preview.jpg) | 按本标准落地的返佣节点接待流程图示例 |
 | README.md | 本说明 |
 
 ## 配色参考图
@@ -33,7 +33,7 @@
 
 ## 示例流程图
 
-![返佣节点接待流程图示例](./samples/rebate-flow-v11-preview.jpg)
+![返佣节点接待流程图示例](./samples/rebate-flow-v12-preview.jpg)
 
 按本标准程序化 SVG 出的竖向真流程图：分叉汇合、语义配色、量字定框、零重叠。
 
