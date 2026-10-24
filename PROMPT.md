@@ -63,6 +63,8 @@
 - 「是 / 前进」箭头偏青，「否 / 另线」偏橙或淡金标注
 - 一图里金色判断框不要超过必要数量，金太多就不再显眼
 
+色板与主次示范见 [palette-hierarchy.png](./palette-hierarchy.png)（源文件 [palette-hierarchy.svg](./palette-hierarchy.svg)）。
+
 ---
 
 ## 三、光与玻璃（成片高级感主要靠这里）

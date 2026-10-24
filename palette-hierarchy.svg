@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1520" height="816" viewBox="0 0 1520 816">
+<defs>
+<linearGradient id="bgGrad" x1="0" y1="0" x2="0" y2="1">
+  <stop offset="0%" stop-color="#0b1422"/><stop offset="70%" stop-color="#071018"/>
+  <stop offset="100%" stop-color="#060e16"/>
+</linearGradient>
+<radialGradient id="glowBlue" cx="10%" cy="2%" r="38%">
+  <stop offset="0%" stop-color="#4d7cff" stop-opacity="0.24"/><stop offset="100%" stop-color="#4d7cff" stop-opacity="0"/>
+</radialGradient>
+<radialGradient id="glowTeal" cx="92%" cy="4%" r="26%">
+  <stop offset="0%" stop-color="#19e7d0" stop-opacity="0.14"/><stop offset="100%" stop-color="#19e7d0" stop-opacity="0"/>
+</radialGradient>
+<linearGradient id="divider" x1="0" y1="0" x2="1" y2="0">
+  <stop offset="0%" stop-color="#bad0ff" stop-opacity="0"/><stop offset="50%" stop-color="#bad0ff" stop-opacity="0.55"/>
+  <stop offset="100%" stop-color="#bad0ff" stop-opacity="0"/>
+</linearGradient>
+<linearGradient id="glassHi" x1="0" y1="0" x2="0.35" y2="1">
+  <stop offset="0%" stop-color="#ffffff" stop-opacity="0.12"/><stop offset="35%" stop-color="#ffffff" stop-opacity="0.035"/>
+  <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+</linearGradient>
+<linearGradient id="goldFill" x1="0" y1="0" x2="0" y2="1">
+  <stop offset="0%" stop-color="#ffd43b" stop-opacity="0.22"/><stop offset="100%" stop-color="#b8860b" stop-opacity="0.12"/>
+</linearGradient>
+<linearGradient id="goldStroke" x1="0" y1="0" x2="1" y2="1">
+  <stop offset="0%" stop-color="#fff3b0"/><stop offset="45%" stop-color="#ffd43b"/><stop offset="100%" stop-color="#c99214"/>
+</linearGradient>
+<linearGradient id="ribbon" x1="0" y1="0" x2="1" y2="0">
+  <stop offset="0%" stop-color="#4285f4" stop-opacity="0.16"/><stop offset="40%" stop-color="#8e63ff" stop-opacity="0.12"/>
+  <stop offset="75%" stop-color="#2ed7bd" stop-opacity="0.10"/><stop offset="100%" stop-color="#ffd43b" stop-opacity="0.08"/>
+</linearGradient>
+<filter id="softGlow" x="-25%" y="-45%" width="150%" height="190%"><feGaussianBlur stdDeviation="10"/></filter>
+</defs>
+<rect width="1520" height="816" fill="url(#bgGrad)"/><rect width="1520" height="816" fill="url(#glowBlue)"/><rect width="1520" height="816" fill="url(#glowTeal)"/><ellipse cx="1380" cy="110" rx="130" ry="84" fill="none" stroke="#a66bff" stroke-opacity="0.12" stroke-width="1.1"/><ellipse cx="1380" cy="110" rx="90" ry="56" fill="none" stroke="#2ed7bd" stroke-opacity="0.09" stroke-width="1"/><path d="M -20 420 C 280 360, 560 500, 900 440 S 1300 360, 1560 470" fill="none" stroke="url(#ribbon)" stroke-width="14" stroke-opacity="0.1" stroke-linecap="round"/>
+<text x="760.0" y="96.0" text-anchor="middle" font-family="Noto Sans CJK SC, Noto Sans CJK, 'Source Han Sans SC', sans-serif" font-size="44" font-weight="800" fill="#f6f8ff" fill-opacity="1.0">常用配色与主次</text>
+<text x="760.0" y="134.0" text-anchor="middle" font-family="Noto Sans CJK SC, Noto Sans CJK, 'Source Han Sans SC', sans-serif" font-size="20" font-weight="500" fill="#c8d4e8" fill-opacity="0.72">Gemini 深蓝玻璃 · 一眼分清谁主谁次</text>
+<rect x="380" y="156" width="760" height="2" rx="1" fill="url(#divider)"/>
+<text x="64.0" y="198.0" text-anchor="start" font-family="Noto Sans CJK SC, Noto Sans CJK, 'Source Han Sans SC', sans-serif" font-size="18" font-weight="700" fill="#c8d4e8" fill-opacity="0.78">色板</text>
+<rect x="94.0" y="216" width="132" height="118" rx="18" fill="none" stroke="#bad0ff" stroke-width="10" stroke-opacity="0.14" filter="url(#softGlow)"/>
+<rect x="94.0" y="216" width="132" height="118" rx="18" fill="#060c15" fill-opacity="0.88"/>
+<rect x="94.0" y="216" width="132" height="118" rx="18" fill="none" stroke="#bad0ff" stroke-opacity="0.85" stroke-width="2.2"/>
+<rect x="94.0" y="216" width="132" height="118" rx="18" fill="url(#glassHi)"/>
+<rect x="98.0" y="220" width="124" height="110" rx="14" fill="none" stroke="#ffffff" stroke-opacity="0.12" stroke-width="1.15"/>
+<rect x="108.0" y="230" width="104" height="36" rx="8" fill="#071018" stroke="#bad0ff" stroke-opacity="0.35" stroke-width="1"/>
+<text x="160.0" y="288.0" text-anchor="middle" font-family="Noto Sans CJK SC, Noto Sans CJK, 'Source Han Sans SC', sans-serif" font-size="15" font-weight="700" fill="#f6f8ff" fill-opacity="1.0">底色</text>
+<text x="160.0" y="306.0" text-anchor="middle" font-family="Noto Sans CJK SC, Noto Sans CJK, 'Source Han Sans SC', sans-serif" font-size="12" font-weight="600" fill="#c8d4e8" fill-opacity="0.7">#071018</text>
+<text x="160.0" y="324.0" text-anchor="middle" font-family="Noto Sans CJK SC, Noto Sans CJK, 'Source Han Sans SC', sans-serif" font-size="11" font-weight="500" fill="#c8d4e8" fill-opacity="0.55">永远是底，不要纯黑</text>
+<rect x="244.0" y="216" width="132" height="118" rx="18" fill="none" stroke="#bad0ff" stroke-width="10" stroke-opacity="0.14" filter="url(#softGlow)"/>
+<rect x="244.0" y="216" width="132" height="118" rx="18" fill="#060c15" fill-opacity="0.88"/>
+<rect x="244.0" y="216" width="132" height="118" rx="18" fill="#f6f8ff" fill-opacity="0.55" stroke="#bad0ff" stroke-opacity="0.9" stroke-width="2.2"/>
+<rect x="244.0" y="216" width="132" height="118" rx="18" fill="url(#glassHi)"/>
+<rect x="248.0" y="220" width="124" height="110" rx="14" fill="none" stroke="#ffffff" stroke-opacity="0.12" stroke-width="1.15"/>
+<rect x="258.0" y="230" width="104" height="36" rx="8" fill="#f6f8ff"/>
+<text x="310.0" y="288.0" text-anchor="middle" font-family="Noto Sans CJK SC, Noto Sans CJK, 'Source Han Sans SC', sans-serif" font-size="15" font-weight="700" fill="#f6f8ff" fill-opacity="1.0">主文字</text>
+<text x="310.0" y="306.0" text-anchor="middle" font-family="Noto Sans CJK SC, Noto Sans CJK, 'Source Han Sans SC', sans-serif" font-size="12" font-weight="600" fill="#c8d4e8" fill-opacity="0.7">#F6F8FF</text>
+<text x="310.0" y="324.0" text-anchor="middle" font-family="Noto Sans CJK SC, Noto Sans CJK, 'Source Han Sans SC', sans-serif" font-size="11" font-weight="500" fill="#c8d4e8" fill-opacity="0.55">标题、主节点</text>
+<rect x="394.0" y="216" width="132" height="118" rx="18" fill="none" stroke="#bad0ff" stroke-width="10" stroke-opacity="0.14" filter="url(#softGlow)"/>
+<rect x="394.0" y="216" width="132" height="118" rx="18" fill="#060c15" fill-opacity="0.88"/>
+<rect x="394.0" y="216" width="132" height="118" rx="18" fill="#c8d4e8" fill-opacity="0.55" stroke="#bad0ff" stroke-opacity="0.9" stroke-width="2.2"/>
+<rect x="394.0" y="216" width="132" height="118" rx="18" fill="url(#glassHi)"/>
+<rect x="398.0" y="220" width="124" height="110" rx="14" fill="none" stroke="#ffffff" stroke-opacity="0.12" stroke-width="1.15"/>
+<rect x="408.0" y="230" width="104" height="36" rx="8" fill="#c8d4e8" fill-opacity="0.95"/>
+<text x="460.0" y="288.0" text-anchor="middle" font-family="Noto Sans CJK SC, Noto Sans CJK, 'Source Han Sans SC', sans-serif" font-size="15" font-weight="700" fill="#f6f8ff" fill-opacity="1.0">次文字</text>
+<text x="460.0" y="306.0" text-anchor="middle" font-family="Noto Sans CJK SC, Noto Sans CJK, 'Source Han Sans SC', sans-serif" font-size="12" font-weight="600" fill="#c8d4e8" fill-opacity="0.7">#C8D4E8</text>
+<text x="460.0" y="324.0" text-anchor="middle" font-family="Noto Sans CJK SC, Noto Sans CJK, 'Source Han Sans SC', sans-serif" font-size="11" font-weight="500" fill="#c8d4e8" fill-opacity="0.55">副说明 · 更淡</text>
+<rect x="544.0" y="216" width="132" height="118" rx="18" fill="none" stroke="#5b8cff" stroke-width="10" stroke-opacity="0.14" filter="url(#softGlow)"/>
+<rect x="544.0" y="216" width="132" height="118" rx="18" fill="#060c15" fill-opacity="0.88"/>
+<rect x="544.0" y="216" width="132" height="118" rx="18" fill="#5b8cff" fill-opacity="0.55" stroke="#5b8cff" stroke-opacity="0.9" stroke-width="2.2"/>
+<rect x="544.0" y="216" width="132" height="118" rx="18" fill="url(#glassHi)"/>
+<rect x="548.0" y="220" width="124" height="110" rx="14" fill="none" stroke="#ffffff" stroke-opacity="0.12" stroke-width="1.15"/>
+<rect x="558.0" y="230" width="104" height="36" rx="8" fill="#5b8cff" fill-opacity="0.95"/>
+<text x="610.0" y="288.0" text-anchor="middle" font-family="Noto Sans CJK SC, Noto Sans CJK, 'Source Han Sans SC', sans-serif" font-size="15" font-weight="700" fill="#f6f8ff" fill-opacity="1.0">蓝强调</text>
+<text x="610.0" y="306.0" text-anchor="middle" font-family="Noto Sans CJK SC, Noto Sans CJK, 'Source Han Sans SC', sans-serif" font-size="12" font-weight="600" fill="#c8d4e8" fill-opacity="0.7">#5B8CFF</text>
+<text x="610.0" y="324.0" text-anchor="middle" font-family="Noto Sans CJK SC, Noto Sans CJK, 'Source Han Sans SC', sans-serif" font-size="11" font-weight="500" fill="#c8d4e8" fill-opacity="0.55">步骤 / 主轴</text>
+<rect x="694.0" y="216" width="132" height="118" rx="18" fill="none" stroke="#2ed7bd" stroke-width="10" stroke-opacity="0.14" filter="url(#softGlow)"/>
+<rect x="694.0" y="216" width="132" height="118" rx="18" fill="#060c15" fill-opacity="0.88"/>
+<rect x="694.0" y="216" width="132" height="118" rx="18" fill="#2ed7bd" fill-opacity="0.55" stroke="#2ed7bd" stroke-opacity="0.9" stroke-width="2.2"/>
+<rect x="694.0" y="216" width="132" height="118" rx="18" fill="url(#glassHi)"/>
+<rect x="698.0" y="220" width="124" height="110" rx="14" fill="none" stroke="#ffffff" stroke-opacity="0.12" stroke-width="1.15"/>
+<rect x="708.0" y="230" width="104" height="36" rx="8" fill="#2ed7bd" fill-opacity="0.95"/>
+<text x="760.0" y="288.0" text-anchor="middle" font-family="Noto Sans CJK SC, Noto Sans CJK, 'Source Han Sans SC', sans-serif" font-size="15" font-weight="700" fill="#f6f8ff" fill-opacity="1.0">青绿</text>
+<text x="760.0" y="306.0" text-anchor="middle" font-family="Noto Sans CJK SC, Noto Sans CJK, 'Source Han Sans SC', sans-serif" font-size="12" font-weight="600" fill="#c8d4e8" fill-opacity="0.7">#2ED7BD</text>
+<text x="760.0" y="324.0" text-anchor="middle" font-family="Noto Sans CJK SC, Noto Sans CJK, 'Source Han Sans SC', sans-serif" font-size="11" font-weight="500" fill="#c8d4e8" fill-opacity="0.55">前进 / 成功</text>
+<rect x="844.0" y="216" width="132" height="118" rx="18" fill="none" stroke="#a66bff" stroke-width="10" stroke-opacity="0.14" filter="url(#softGlow)"/>
+<rect x="844.0" y="216" width="132" height="118" rx="18" fill="#060c15" fill-opacity="0.88"/>
+<rect x="844.0" y="216" width="132" height="118" rx="18" fill="#a66bff" fill-opacity="0.55" stroke="#a66bff" stroke-opacity="0.9" stroke-width="2.2"/>
+<rect x="844.0" y="216" width="132" height="118" rx="18" fill="url(#glassHi)"/>
+<rect x="848.0" y="220" width="124" height="110" rx="14" fill="none" stroke="#ffffff" stroke-opacity="0.12" stroke-width="1.15"/>
+<rect x="858.0" y="230" width="104" height="36" rx="8" fill="#a66bff" fill-opacity="0.95"/>
+<text x="910.0" y="288.0" text-anchor="middle" font-family="Noto Sans CJK SC, Noto Sans CJK, 'Source Han Sans SC', sans-serif" font-size="15" font-weight="700" fill="#f6f8ff" fill-opacity="1.0">紫强调</text>
+<text x="910.0" y="306.0" text-anchor="middle" font-family="Noto Sans CJK SC, Noto Sans CJK, 'Source Han Sans SC', sans-serif" font-size="12" font-weight="600" fill="#c8d4e8" fill-opacity="0.7">#A66BFF</text>
+<text x="910.0" y="324.0" text-anchor="middle" font-family="Noto Sans CJK SC, Noto Sans CJK, 'Source Han Sans SC', sans-serif" font-size="11" font-weight="500" fill="#c8d4e8" fill-opacity="0.55">支路 / 装饰</text>
+<rect x="994.0" y="216" width="132" height="118" rx="18" fill="none" stroke="#ffd43b" stroke-width="10" stroke-opacity="0.14" filter="url(#softGlow)"/>
+<rect x="994.0" y="216" width="132" height="118" rx="18" fill="#060c15" fill-opacity="0.88"/>
+<rect x="994.0" y="216" width="132" height="118" rx="18" fill="#ffd43b" fill-opacity="0.55" stroke="#ffd43b" stroke-opacity="0.9" stroke-width="2.2"/>
+<rect x="994.0" y="216" width="132" height="118" rx="18" fill="url(#glassHi)"/>
+<rect x="998.0" y="220" width="124" height="110" rx="14" fill="none" stroke="#ffffff" stroke-opacity="0.12" stroke-width="1.15"/>
+<rect x="1008.0" y="230" width="104" height="36" rx="8" fill="#ffd43b" fill-opacity="0.95"/>
+<text x="1060.0" y="288.0" text-anchor="middle" font-family="Noto Sans CJK SC, Noto Sans CJK, 'Source Han Sans SC', sans-serif" font-size="15" font-weight="700" fill="#f6f8ff" fill-opacity="1.0">金强调</text>
+<text x="1060.0" y="306.0" text-anchor="middle" font-family="Noto Sans CJK SC, Noto Sans CJK, 'Source Han Sans SC', sans-serif" font-size="12" font-weight="600" fill="#c8d4e8" fill-opacity="0.7">#FFD43B</text>
+<text x="1060.0" y="324.0" text-anchor="middle" font-family="Noto Sans CJK SC, Noto Sans CJK, 'Source Han Sans SC', sans-serif" font-size="11" font-weight="500" fill="#c8d4e8" fill-opacity="0.55">判断 / 门槛</text>
+<rect x="1144.0" y="216" width="132" height="118" rx="18" fill="none" stroke="#ff9b52" stroke-width="10" stroke-opacity="0.14" filter="url(#softGlow)"/>
+<rect x="1144.0" y="216" width="132" height="118" rx="18" fill="#060c15" fill-opacity="0.88"/>
+<rect x="1144.0" y="216" width="132" height="118" rx="18" fill="#ff9b52" fill-opacity="0.55" stroke="#ff9b52" stroke-opacity="0.9" stroke-width="2.2"/>
+<rect x="1144.0" y="216" width="132" height="118" rx="18" fill="url(#glassHi)"/>
+<rect x="1148.0" y="220" width="124" height="110" rx="14" fill="none" stroke="#ffffff" stroke-opacity="0.12" stroke-width="1.15"/>
+<rect x="1158.0" y="230" width="104" height="36" rx="8" fill="#ff9b52" fill-opacity="0.95"/>
+<text x="1210.0" y="288.0" text-anchor="middle" font-family="Noto Sans CJK SC, Noto Sans CJK, 'Source Han Sans SC', sans-serif" font-size="15" font-weight="700" fill="#f6f8ff" fill-opacity="1.0">橙警告</text>
+<text x="1210.0" y="306.0" text-anchor="middle" font-family="Noto Sans CJK SC, Noto Sans CJK, 'Source Han Sans SC', sans-serif" font-size="12" font-weight="600" fill="#c8d4e8" fill-opacity="0.7">#FF9B52</text>
+<text x="1210.0" y="324.0" text-anchor="middle" font-family="Noto Sans CJK SC, Noto Sans CJK, 'Source Han Sans SC', sans-serif" font-size="11" font-weight="500" fill="#c8d4e8" fill-opacity="0.55">另线 / 风险</text>
+<rect x="1294.0" y="216" width="132" height="118" rx="18" fill="none" stroke="#bad0ff" stroke-width="10" stroke-opacity="0.14" filter="url(#softGlow)"/>
+<rect x="1294.0" y="216" width="132" height="118" rx="18" fill="#060c15" fill-opacity="0.88"/>
+<rect x="1294.0" y="216" width="132" height="118" rx="18" fill="#bad0ff" fill-opacity="0.55" stroke="#bad0ff" stroke-opacity="0.9" stroke-width="2.2"/>
+<rect x="1294.0" y="216" width="132" height="118" rx="18" fill="url(#glassHi)"/>
+<rect x="1298.0" y="220" width="124" height="110" rx="14" fill="none" stroke="#ffffff" stroke-opacity="0.12" stroke-width="1.15"/>
+<rect x="1308.0" y="230" width="104" height="36" rx="8" fill="#bad0ff" fill-opacity="0.95"/>
+<text x="1360.0" y="288.0" text-anchor="middle" font-family="Noto Sans CJK SC, Noto Sans CJK, 'Source Han Sans SC', sans-serif" font-size="15" font-weight="700" fill="#f6f8ff" fill-opacity="1.0">玻璃描边</text>
+<text x="1360.0" y="306.0" text-anchor="middle" font-family="Noto Sans CJK SC, Noto Sans CJK, 'Source Han Sans SC', sans-serif" font-size="12" font-weight="600" fill="#c8d4e8" fill-opacity="0.7">#BAD0FF</text>
+<text x="1360.0" y="324.0" text-anchor="middle" font-family="Noto Sans CJK SC, Noto Sans CJK, 'Source Han Sans SC', sans-serif" font-size="11" font-weight="500" fill="#c8d4e8" fill-opacity="0.55">玻璃卡外轮廓</text>
+<text x="64.0" y="382.0" text-anchor="start" font-family="Noto Sans CJK SC, Noto Sans CJK, 'Source Han Sans SC', sans-serif" font-size="18" font-weight="700" fill="#c8d4e8" fill-opacity="0.78">主次示范 · 同款玻璃卡一眼看出层次</text>
+<rect x="44.0" y="404" width="420" height="168" rx="24" fill="none" stroke="#5b8cff" stroke-width="10" stroke-opacity="0.14" filter="url(#softGlow)"/>
+<rect x="44.0" y="404" width="420" height="168" rx="24" fill="#060c15" fill-opacity="0.88"/>
+<rect x="44.0" y="404" width="420" height="168" rx="24" fill="#5b8cff" fill-opacity="0.1" stroke="#5b8cff" stroke-opacity="0.9" stroke-width="2.2"/>
+<rect x="44.0" y="404" width="420" height="168" rx="24" fill="url(#glassHi)"/>
+<rect x="48.0" y="408" width="412" height="160" rx="20" fill="none" stroke="#ffffff" stroke-opacity="0.12" stroke-width="1.15"/>
+<text x="254.0" y="462.0" text-anchor="middle" font-family="Noto Sans CJK SC, Noto Sans CJK, 'Source Han Sans SC', sans-serif" font-size="36" font-weight="800" fill="#f6f8ff" fill-opacity="1.0">大标题 · 最亮最大</text>
+<text x="254.0" y="500.0" text-anchor="middle" font-family="Noto Sans CJK SC, Noto Sans CJK, 'Source Han Sans SC', sans-serif" font-size="18" font-weight="500" fill="#c8d4e8" fill-opacity="0.72">整图只有这一档最抢眼</text>
+<text x="254.0" y="532.0" text-anchor="middle" font-family="Noto Sans CJK SC, Noto Sans CJK, 'Source Han Sans SC', sans-serif" font-size="14" font-weight="500" fill="#c8d4e8" fill-opacity="0.55">什么时候用：封面 / 流程总标题</text>
+<rect x="488.0" y="404" width="360" height="168" rx="24" fill="none" stroke="#5b8cff" stroke-width="10" stroke-opacity="0.14" filter="url(#softGlow)"/>
+<rect x="488.0" y="404" width="360" height="168" rx="24" fill="#060c15" fill-opacity="0.88"/>
+<rect x="488.0" y="404" width="360" height="168" rx="24" fill="#5b8cff" fill-opacity="0.16" stroke="#5b8cff" stroke-opacity="0.9" stroke-width="2.2"/>
+<rect x="488.0" y="404" width="360" height="168" rx="24" fill="url(#glassHi)"/>
+<rect x="492.0" y="408" width="352" height="160" rx="20" fill="none" stroke="#ffffff" stroke-opacity="0.12" stroke-width="1.15"/>
+<text x="668.0" y="462.0" text-anchor="middle" font-family="Noto Sans CJK SC, Noto Sans CJK, 'Source Han Sans SC', sans-serif" font-size="28" font-weight="800" fill="#f6f8ff" fill-opacity="1.0">步骤 · 蓝玻璃</text>
+<text x="668.0" y="500.0" text-anchor="middle" font-family="Noto Sans CJK SC, Noto Sans CJK, 'Source Han Sans SC', sans-serif" font-size="18" font-weight="500" fill="#c8d4e8" fill-opacity="0.72">主动作写在这里</text>
+<text x="668.0" y="532.0" text-anchor="middle" font-family="Noto Sans CJK SC, Noto Sans CJK, 'Source Han Sans SC', sans-serif" font-size="14" font-weight="500" fill="#c8d4e8" fill-opacity="0.55">什么时候用：普通流程节点</text>
+<rect x="872.0" y="404" width="320" height="168" rx="24" fill="none" stroke="#ffd43b" stroke-width="10" stroke-opacity="0.14" filter="url(#softGlow)"/>
+<rect x="872.0" y="404" width="320" height="168" rx="24" fill="#060c15" fill-opacity="0.88"/>
+<rect x="872.0" y="404" width="320" height="168" rx="24" fill="#ffd43b" fill-opacity="0.18" stroke="#ffd43b" stroke-opacity="0.9" stroke-width="2.2"/>
+<rect x="872.0" y="404" width="320" height="168" rx="24" fill="url(#glassHi)"/>
+<rect x="876.0" y="408" width="312" height="160" rx="20" fill="none" stroke="#ffffff" stroke-opacity="0.12" stroke-width="1.15"/>
+<rect x="872.0" y="404" width="320" height="168" rx="24" fill="url(#goldFill)" stroke="url(#goldStroke)" stroke-width="2.4"/>
+<rect x="872.0" y="404" width="320" height="168" rx="24" fill="url(#glassHi)"/>
+<text x="1032.0" y="462.0" text-anchor="middle" font-family="Noto Sans CJK SC, Noto Sans CJK, 'Source Han Sans SC', sans-serif" font-size="28" font-weight="800" fill="#ffd43b" fill-opacity="1.0">判断 · 金框</text>
+<text x="1032.0" y="500.0" text-anchor="middle" font-family="Noto Sans CJK SC, Noto Sans CJK, 'Source Han Sans SC', sans-serif" font-size="18" font-weight="500" fill="#c8d4e8" fill-opacity="0.72">分叉问一句</text>
+<text x="1032.0" y="532.0" text-anchor="middle" font-family="Noto Sans CJK SC, Noto Sans CJK, 'Source Han Sans SC', sans-serif" font-size="14" font-weight="500" fill="#c8d4e8" fill-opacity="0.55">什么时候用：要不要分叉</text>
+<rect x="1216.0" y="440.0" width="260" height="72" rx="36.0" fill="none" stroke="#ff9b52" stroke-width="10" stroke-opacity="0.14" filter="url(#softGlow)"/>
+<rect x="1216.0" y="440.0" width="260" height="72" rx="36.0" fill="#060c15" fill-opacity="0.88"/>
+<rect x="1216.0" y="440.0" width="260" height="72" rx="36.0" fill="#ff9b52" fill-opacity="0.18" stroke="#ff9b52" stroke-opacity="0.9" stroke-width="2.2"/>
+<rect x="1216.0" y="440.0" width="260" height="72" rx="36.0" fill="url(#glassHi)"/>
+<rect x="1220.0" y="444.0" width="252" height="64" rx="32.0" fill="none" stroke="#ffffff" stroke-opacity="0.12" stroke-width="1.15"/>
+<text x="1346.0" y="484.0" text-anchor="middle" font-family="Noto Sans CJK SC, Noto Sans CJK, 'Source Han Sans SC', sans-serif" font-size="22" font-weight="800" fill="#ff9b52" fill-opacity="1.0">另线 · 橙出口</text>
+<text x="1346.0" y="540.0" text-anchor="middle" font-family="Noto Sans CJK SC, Noto Sans CJK, 'Source Han Sans SC', sans-serif" font-size="14" font-weight="500" fill="#c8d4e8" fill-opacity="0.55">一图最多一处主橙</text>
+<text x="1346.0" y="560.0" text-anchor="middle" font-family="Noto Sans CJK SC, Noto Sans CJK, 'Source Han Sans SC', sans-serif" font-size="13" font-weight="500" fill="#c8d4e8" fill-opacity="0.5">什么时候用：其他业务 / 风险</text>
+<rect x="56" y="608" width="1408" height="96" rx="20" fill="#060c15" fill-opacity="0.82" stroke="#bad0ff" stroke-opacity="0.28" stroke-width="1.4"/>
+<rect x="56" y="608" width="1408" height="96" rx="20" fill="url(#glassHi)"/>
+<text x="92.0" y="648.0" text-anchor="start" font-family="Noto Sans CJK SC, Noto Sans CJK, 'Source Han Sans SC', sans-serif" font-size="20" font-weight="800" fill="#f6f8ff" fill-opacity="1.0">三档层次</text>
+<text x="92.0" y="676.0" text-anchor="start" font-family="Noto Sans CJK SC, Noto Sans CJK, 'Source Han Sans SC', sans-serif" font-size="16" font-weight="500" fill="#c8d4e8" fill-opacity="0.72">主标题（最亮最大）  →  节点主字（统一白字）  →  副说明 / 标注（#c8d4e8 · 约 0.72 透明）</text>
+<text x="1428.0" y="662.0" text-anchor="end" font-family="Noto Sans CJK SC, Noto Sans CJK, 'Source Han Sans SC', sans-serif" font-size="14" font-weight="600" fill="#2ed7bd" fill-opacity="0.85">光统一从左上 · 玻璃有顶高光与内描边</text>
+<text x="760.0" y="732.0" text-anchor="middle" font-family="Noto Sans CJK SC, Noto Sans CJK, 'Source Han Sans SC', sans-serif" font-size="15" font-weight="500" fill="#c8d4e8" fill-opacity="0.55">强调色克制：蓝 / 青 / 紫 / 金；橙仅另线或警告。装饰加多了，第一眼反而变杂。</text>
+<text x="760.0" y="760.0" text-anchor="middle" font-family="Noto Sans CJK SC, Noto Sans CJK, 'Source Han Sans SC', sans-serif" font-size="13" font-weight="500" fill="#c8d4e8" fill-opacity="0.42">详见 PROMPT.md 第二节色板 · 第四节排版 · 第六节五刀</text>
+</svg>
